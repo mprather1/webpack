@@ -11,7 +11,7 @@ module.exports = {
     ],
   module: {
     loaders: [
-      {test: /\.coffee$/, include: __dirname + '/app', loader: "coffee-loader"}
+      {test: /\.js/, include: __dirname + '/app', loader: "babel-loader"}
     ]
   },
   output: {
