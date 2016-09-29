@@ -7,8 +7,8 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 var path = {
   ENTRY: "./app/index.jsx",
-  FILENAME: "index_bundle.js",
-  PATHNAME: __dirname + "/dist"
+  OUTPUT_FILENAME: "index_bundle.js",
+  OUTPUT_PATH: __dirname + "/dist"
 };
 
 module.exports = {
@@ -21,8 +21,8 @@ module.exports = {
     ]
   },
   output: {
-    filename: path.FILENAME,
-    path: path.PATHNAME
+    filename: path.OUTPUT_FILENAME,
+    path: path.OUTPUT_PATH
   },
   plugins: [HtmlWebpackPluginConfig]
 };
